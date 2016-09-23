@@ -1,0 +1,13 @@
+﻿<Window x:Class="TagBox.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:tagBox="clr-namespace:WpfControls.TagBox;assembly=WpfControls.TagBox"
+        mc:Ignorable="d"
+        Title="TagBox Demo" Height="350" Width="525">
+    <Grid>
+        <tagBox:TagBox ItemsSource="{Binding Tags}" DisplayMemberPath="Value" SearchMethod="{Binding SearchAction}"
+                       SearchResults="{Binding SearchTags}"/>
+    </Grid>
+</Window>
